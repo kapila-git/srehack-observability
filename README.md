@@ -57,4 +57,6 @@ In case of Kubernetes deployment we use only some of Spring Cloud components lik
 3. Prometheus - [https://prometheus.io/](https://prometheus.io/) 
 4. Grafana - [https://grafana.com/](https://grafana.com/)
 5. NPM - [https://www.npmjs.com/](https://www.npmjs.com/)
-6. Prometheus - [https://prometheus.io/](https://prometheus.io/)
+6. Maven - [https://maven.apache.org/](https://maven.apache.org/)
+7. Docker - [https://www.docker.com/](https://www.docker.com/)
+8. Kubernetes - [https://kubernetes.io/](https://kubernetes.io/)
