@@ -1,10 +1,10 @@
-# Microservices with Spring Cloud Demo Project [![Twitter](https://img.shields.io/twitter/follow/piotr_minkowski.svg?style=social&logo=twitter&label=Follow%20Me)](https://twitter.com/piotr_minkowski)
+# Microservices with Spring Cloud Demo Project for SREHACK '21 
 
-In this project I'm demonstrating you the most interesting features of [Spring Cloud Project](https://spring.io/projects/spring-cloud) for building microservice-based architecture. Most of examples are based on **Spring Boot 1.5**.
+In this project, you can find 2 Microservices, based on **Spring Boot 1.5** and simple UI component based on **Angular**
 
 ## Getting Started 
-Currently you may find here some examples of microservices implementation using different projects from Spring Cloud. All the examples are divided into the branches and described in a separated articles on my blog. Here's a full list of available examples:
-1. Introduction to Spring Cloud components like discovery with **Eureka**, load balancing with **Ribbon**, REST client **Feign**, API gataway with **Zuul**. The example is available in the branch [master](https://github.com/piomin/sample-spring-microservices/tree/master). A detailed description can be found here: [Part 1: Creating microservice using Spring Cloud, Eureka and Zuul](https://piotrminkowski.com/2017/02/05/part-1-creating-microservice-using-spring-cloud-eureka-and-zuul/)
+Currently you may find here some examples of microservices implementation using different projects from Spring Cloud. All the examples are divided into the branches and described in a separated articles on Piomin's blog. Here's a full list of available examples:
+1. Introduction to Spring Cloud components like discovery with **Eureka**, load balancing with **Ribbon**, REST client **Feign**, API gataway with **Zuul**. The example is available in the branch [main](https://github.com/kapila-git/srehack-observability/tree/main/microservices). A detailed description can be found here: [Part 1: Creating microservice using Spring Cloud, Eureka and Zuul](https://piotrminkowski.com/2017/02/05/part-1-creating-microservice-using-spring-cloud-eureka-and-zuul/)
 2. Introduction to Spring Cloud components used for microservices monitoring like **Spring Cloud Sleuth** and **Zipkin**. Integration with **Logstash** for sending logs to ELK. The example is available in the branch [logstash](https://github.com/piomin/sample-spring-microservices/tree/logstash). A detailed description can be found here: [Part 2: Creating microservices – monitoring with Spring Cloud Sleuth, ELK and Zipkin](https://piotrminkowski.com/2017/04/05/part-2-creating-microservices-monitoring-with-spring-cloud-sleuth-elk-and-zipkin/)
 3. Introduction to load balancing with **Ribbon** and **Feign** declarative HTTP client, circuit braker and fallback with **Hystrix**. The example is available in the branch [hystrix](https://github.com/piomin/sample-spring-microservices/tree/hystrix). A detailed description can be found here: [Part 3: Creating Microservices: Circuit Breaker, Fallback and Load Balancing with Spring Cloud](https://piotrminkowski.com/2017/05/15/part-3-creating-microservices-circuit-breaker-fallback-and-load-balancing-with-spring-cloud/)
 4. Using tool **Spring Boot Admin** for managing and monitoring microservices-based system. The example is available in the branch [admin](https://github.com/piomin/sample-spring-microservices/tree/admin). A detailed description can be found here: [Monitoring Microservices With Spring Boot Admin](https://piotrminkowski.com/2017/06/26/monitoring-microservices-with-spring-boot-admin/)
@@ -23,10 +23,14 @@ If you want to change anything on any service(s), you need to build the service(
 
 docker-compose build
 docker-compose up
-
-### How to Run
-
 docker-compose down
+
+If you want to run UI component :
+
+npm run ng serve
+ng serve
+
+Make sure to change the base URL of Angular component to point your Microservices.
 
 ## Architecture
 
@@ -46,4 +50,11 @@ In case of Kubernetes deployment we use only some of Spring Cloud components lik
 
 <img src="https://piotrminkowski.files.wordpress.com/2017/03/kube_micro.png?w=768&h=528" title="Kube"/>
 
-For similar examples of microservice applications with Spring Boot 2 you may refer to the repository https://github.com/piomin/sample-spring-microservices-new
+## Resources
+
+1. OpenTelemetry - [https://opentelemetry.io/](https://opentelemetry.io/)
+2. Elasticsearch - [https://www.elastic.co/elastic-stack/](https://www.elastic.co/elastic-stack/)
+3. Prometheus - [https://prometheus.io/](https://prometheus.io/) 
+4. Grafana - [https://grafana.com/](https://grafana.com/)
+5. NPM - [https://www.npmjs.com/](https://www.npmjs.com/)
+6. Prometheus - [https://prometheus.io/](https://prometheus.io/)
