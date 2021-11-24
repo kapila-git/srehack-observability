@@ -22,12 +22,15 @@ docker-compose up
 If you want to change anything on any service(s), you need to build the service(s) you changed and then :
 
 docker-compose build
+
 docker-compose up
+
 docker-compose down
 
 If you want to run UI component :
 
 npm run ng serve
+
 ng serve
 
 Make sure to change the base URL of Angular component to point your Microservices.
