@@ -86,6 +86,12 @@ There are various open-source monitoring tools available. Few of them are;
 
 (Ref: https://logz.io/blog/open-source-monitoring-tools/)
 
+## High-level Goals of the challenge
+1. Goal: successfully integrate OpenTelemetry libraries and collectors to extract telemetry data from the microservices
+2. Goal: successfully instrument the microservices either manually or via auto-instrumentation
+3. Goal: successfully establish request tracing end-to-end via any 3rd party open-source back-end like Zipkin, Elastic APM, etc.
+4. Goal: build visualization using the preferred 3rd party open-source back-end tool and demonstrate successes and failures using traces
+
 ## Resources
 
 1. OpenTelemetry - [https://opentelemetry.io/](https://opentelemetry.io/)
