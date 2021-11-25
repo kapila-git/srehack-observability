@@ -53,6 +53,39 @@ In case of Kubernetes deployment we use only some of Spring Cloud components lik
 
 <img src="https://piotrminkowski.files.wordpress.com/2017/03/kube_micro.png?w=768&h=528" title="Kube"/>
 
+## Try with your own Microservices
+If you want to try implementing observability in your own Microservices rather than using provided Microservices, you are required to present followings at first evaluation checkpoint.
+
+1. High-level design of the system
+2. Architecture diagram
+
+## OpenTelemetry
+OpenTelemetry (also referred to as OTel) is an open-source observability framework made up of a collection of tools, APIs, and SDKs, that enables IT teams to instrument, generate, collect, and export telemetry data for analysis and understand software performance and behavior.
+
+### Telemetry data
+Capturing data is critical to understanding how your applications and infrastructure are performing at any given time. This information is gathered from remote, often inaccessible points within your ecosystem and processed by some sort of tool or equipment. Monitoring begins here. The data is incredibly plentiful and difficult to store over long periods due to capacity limitations — a reason why private and public cloud storage services have been a boon to DevOps teams.
+
+Logs, metrics, and traces make up the bulk of all telemetry data.
+
+**Logs** are important because you’ll naturally want an event-based record of any notable anomalies across the system. Structured, unstructured, or in plain text, these readable files can tell you the results of any transaction involving an endpoint within your multicloud environment. However, not all logs are inherently reviewable — a problem that’s given rise to external log analysis tools.
+
+**Metrics** are numerical data points represented as counts or measures that are often calculated or aggregated over a period of time. Metrics originate from several sources including infrastructure, hosts, and third-party sources. While logs aren’t always accessible, most metrics tend to be reachable via query. Timestamps, values, and even event names can preemptively uncover a growing problem that needs remediation.
+
+**Traces** are the act of following a process (for example, an API request or other system activity) from start to finish, showing how services connect. Keeping watch over this pathway is critical to understanding how your ecosystem works, if it’s working effectively, and if any troubleshooting is necessary. Span data is a hallmark of tracing — which includes information such as unique identifiers, operation names, timestamps, logs, events, and indexes.
+
+(Ref: https://www.dynatrace.com/news/blog/what-is-opentelemetry-2/)
+
+## Open-source monitoring tools with visualizations
+Monitoring — the process of gathering telemetry data on the operation of an IT environment to gauge performance and troubleshoot issues — is a perfect example of how open source acts as both a driver and enabler of DevOps methodologies. Today, engineers can select from a huge and ever-growing number of open source tools to help them with various elements involved in monitoring–from databases, to user interfaces, to instrumentation frameworks, to data collectors and monitoring agents
+
+There are various open-source monitoring tools available. Few of them are;
+1. Grafana
+2. Prometheus
+3. Jaeger
+4. APM
+
+(Ref: https://logz.io/blog/open-source-monitoring-tools/)
+
 ## Resources
 
 1. OpenTelemetry - [https://opentelemetry.io/](https://opentelemetry.io/)
