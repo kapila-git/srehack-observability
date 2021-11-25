@@ -1,6 +1,6 @@
 # Microservices with Spring Cloud Demo Project for SREHACK '21 
 
-In this project, you can find 2 Microservices, based on **Spring Boot 1.5** and simple UI component based on **Angular**
+In this project, you can find 2 Microservices, based on **Spring Boot 1.5** and simple UI component based on **Angular 8.3.5**. Microservices should be executed on **Java 8**.
 
 ## Getting Started 
 Currently you may find here some examples of microservices implementation using different projects from Spring Cloud. All the examples are divided into the branches and described in a separated articles on Piomin's blog. Here's a full list of available examples:
