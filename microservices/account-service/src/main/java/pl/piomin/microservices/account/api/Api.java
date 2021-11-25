@@ -11,6 +11,7 @@ import java.util.stream.Collectors;
 
 @RestController
 @Slf4j
+@CrossOrigin("*")
 public class Api {
 
     private List<Account> accounts;
