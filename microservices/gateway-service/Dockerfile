@@ -1,6 +1,4 @@
-FROM openjdk:8-jdk-alpine
-MAINTAINER Piotr Minkowski <piotr.minkowski@gmail.com>
-MAINTAINER Ramazan Sakin <ramazansakin63@gmail.com>
+FROM openjdk:8u312-jdk-oraclelinux7
 ADD target/gateway-service.jar gateway-service.jar
 EXPOSE 8765
 ENTRYPOINT ["java", "-jar", "/gateway-service.jar"]
